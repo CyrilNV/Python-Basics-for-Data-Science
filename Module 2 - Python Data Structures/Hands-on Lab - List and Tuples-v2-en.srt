@@ -1,0 +1,484 @@
+0
+00:00:00,000 --> 00:00:04,720
+In this video we will cover lists and tuples.
+
+1
+00:00:04,720 --> 00:00:08,639
+These are called compound data types and are one of the key types of data
+
+2
+00:00:08,639 --> 00:00:13,280
+structures in Python. Tuples.
+
+3
+00:00:13,280 --> 00:00:16,880
+Tuples are an ordered sequence. Here is a tuple
+
+4
+00:00:16,880 --> 00:00:22,720
+ratings. Tuples are expressed as comma separated elements within parentheses.
+
+5
+00:00:22,720 --> 00:00:28,800
+These are values inside the parentheses. In Python, there are different types:
+
+6
+00:00:28,800 --> 00:00:32,559
+strings, integer, float. They can all be contained
+
+7
+00:00:32,559 --> 00:00:35,840
+in a tuple but the type of the variable is tuple.
+
+8
+00:00:35,840 --> 00:00:39,280
+Each element of a tuple can be accessed via an index.
+
+9
+00:00:39,280 --> 00:00:42,719
+The following table represents the relationship between the index and the
+
+10
+00:00:42,719 --> 00:00:46,399
+elements in the tuple. The first element can be accessed by the
+
+11
+00:00:46,399 --> 00:00:50,480
+name of the tuple followed by a square bracket with the index number,
+
+12
+00:00:50,480 --> 00:00:55,199
+in this case zero. We can access the second element as follows.
+
+13
+00:00:55,199 --> 00:01:00,800
+We can also access the last element. In Python, we can use negative index.
+
+14
+00:01:00,800 --> 00:01:05,920
+The relationship is as follows. The corresponding values are shown here.
+
+15
+00:01:05,920 --> 00:01:09,600
+We can concatenate or combine tuples by adding them.
+
+16
+00:01:09,600 --> 00:01:14,000
+The result is the following with the following index.
+
+17
+00:01:14,000 --> 00:01:17,759
+If we would like multiple elements from a tuple, we could also slice
+
+18
+00:01:17,759 --> 00:01:21,759
+tuples. For example, if we want the first three elements
+
+19
+00:01:21,759 --> 00:01:26,080
+we use the following command. The last index is one larger than the
+
+20
+00:01:26,080 --> 00:01:30,640
+index you want; similarly if we want the last two elements,
+
+21
+00:01:30,640 --> 00:01:35,280
+we use the following command. Notice, how the last index is one larger than the
+
+22
+00:01:35,280 --> 00:01:39,680
+length of the tuple. We can use the len command to obtain the
+
+23
+00:01:39,680 --> 00:01:45,119
+length of a tuple. As there are five elements, the result is 5.
+
+24
+00:01:45,119 --> 00:01:48,320
+Tuples are immutable which means we can't change them.
+
+25
+00:01:48,320 --> 00:01:52,640
+To see why this is important, let's see what happens when we set the variable
+
+26
+00:01:52,640 --> 00:01:56,159
+ratings 1 to ratings. Let's use the image to
+
+27
+00:01:56,159 --> 00:01:59,759
+provide a simplified explanation of what's going on.
+
+28
+00:01:59,759 --> 00:02:04,799
+Each variable does not contain a tuple, but references the same immutable tuple
+
+29
+00:02:04,799 --> 00:02:08,479
+object. See the objects and classes module for
+
+30
+00:02:08,479 --> 00:02:12,400
+more about objects. Let's say, we want to change the
+
+31
+00:02:12,400 --> 00:02:17,599
+element at index 2. Because tuples are immutable we can't,
+
+32
+00:02:17,599 --> 00:02:21,520
+therefore ratings 1 will not be affected by a change in rating
+
+33
+00:02:21,520 --> 00:02:25,680
+because the tuple is immutable, i.e we can't change it.
+
+34
+00:02:25,680 --> 00:02:29,040
+We can assign a different tuple to the ratings variable.
+
+35
+00:02:29,040 --> 00:02:32,800
+The variable ratings now references another tuple.
+
+36
+00:02:32,800 --> 00:02:37,440
+As a consequence of immutability, if we would like to manipulate a tuple
+
+37
+00:02:37,440 --> 00:02:41,200
+we must create a new tuple instead. For example,
+
+38
+00:02:41,200 --> 00:02:44,800
+if we would like to sort a tuple we use the function sorted.
+
+39
+00:02:44,800 --> 00:02:49,040
+The input is the original tuple, the output is a new sorted
+
+40
+00:02:49,040 --> 00:02:53,840
+list. For more on functions, see our video on functions.
+
+41
+00:02:53,840 --> 00:02:58,720
+A tuple can contain other tuples as well as other complex data types.
+
+42
+00:02:58,720 --> 00:03:03,040
+This is called nesting. We can access these elements using the standard
+
+43
+00:03:03,040 --> 00:03:07,360
+indexing methods. If we select an index with a tuple, the
+
+44
+00:03:07,360 --> 00:03:10,879
+same index convention applies. As such,
+
+45
+00:03:10,879 --> 00:03:16,800
+we can then access values in the tuple. For example, we could access the second
+
+46
+00:03:16,800 --> 00:03:19,680
+element. We can apply this indexing directly to
+
+47
+00:03:19,680 --> 00:03:24,159
+the tuple variable NT. It is helpful to visualize this as a
+
+48
+00:03:24,159 --> 00:03:27,840
+tree. We can visualize this nesting as a tree.
+
+49
+00:03:27,840 --> 00:03:33,440
+The tuple has the following indexes. If we consider indexes with other tuples,
+
+50
+00:03:33,440 --> 00:03:36,720
+we see the tuple at index 2 contains a tuple with two
+
+51
+00:03:36,720 --> 00:03:42,879
+elements. We can access those two indexes. The same convention applies to index
+
+52
+00:03:42,879 --> 00:03:45,680
+3. We can access the elements in those
+
+53
+00:03:45,680 --> 00:03:50,720
+tuples as well. We can continue the process. We can even
+
+54
+00:03:50,720 --> 00:03:54,640
+access deeper levels of the tree by adding another square bracket.
+
+55
+00:03:54,640 --> 00:03:58,720
+We can access different characters in the string or various elements in the
+
+56
+00:03:58,720 --> 00:04:03,040
+second tuple contained in the first. Lists are also a popular
+
+57
+00:04:03,040 --> 00:04:08,319
+data structure in Python. Lists are also an ordered sequence.
+
+58
+00:04:08,319 --> 00:04:13,760
+Here is a list, "L." A list is represented with square brackets.
+
+59
+00:04:13,760 --> 00:04:19,040
+In many respect, lists are like tuples. One key difference is they are mutable.
+
+60
+00:04:19,040 --> 00:04:22,800
+Lists can contain strings, floats, integers.
+
+61
+00:04:22,800 --> 00:04:28,160
+We can nest other lists. We also nest tuples and other data structures.
+
+62
+00:04:28,160 --> 00:04:31,680
+The same indexing conventions apply for nesting
+
+63
+00:04:31,680 --> 00:04:36,320
+Like tuples, each element of a list can be accessed via an index.
+
+64
+00:04:36,320 --> 00:04:39,840
+The following table represents the relationship between the index and the
+
+65
+00:04:39,840 --> 00:04:44,720
+elements in the list. The first element can be accessed by the name of the list
+
+66
+00:04:44,720 --> 00:04:47,919
+followed by a square bracket with the index number,
+
+67
+00:04:47,919 --> 00:04:53,520
+in this case zero. We can access the second element as follows.
+
+68
+00:04:53,520 --> 00:05:00,160
+We can also access the last element. In Python, we can use a negative index;
+
+69
+00:05:00,160 --> 00:05:04,240
+the relationship is as follows. The corresponding indexes
+
+70
+00:05:04,240 --> 00:05:10,400
+are as follows. We can also perform slicing in lists. For example, if we want
+
+71
+00:05:10,400 --> 00:05:14,720
+the last two elements in this list we use the following command.
+
+72
+00:05:14,720 --> 00:05:18,960
+Notice how the last index is one larger than the length of the list.
+
+73
+00:05:18,960 --> 00:05:22,960
+The index conventions for lists and tuples are identical.
+
+74
+00:05:22,960 --> 00:05:28,400
+Check the labs for more examples. We can concatenate or combine lists by adding
+
+75
+00:05:28,400 --> 00:05:31,840
+them. The result is the following. The new list
+
+76
+00:05:31,840 --> 00:05:36,400
+has the following indices. Lists are mutable, therefore we
+
+77
+00:05:36,400 --> 00:05:40,479
+can change them. For example, we apply the method extends
+
+78
+00:05:40,479 --> 00:05:43,840
+by adding a dot followed by the name of the method then
+
+79
+00:05:43,840 --> 00:05:47,440
+parentheses. The argument inside the parentheses is a
+
+80
+00:05:47,440 --> 00:05:49,520
+new list that we are going to concatenate
+
+81
+00:05:49,520 --> 00:05:54,080
+to the original list. In this case, instead of creating a new list,
+
+82
+00:05:54,080 --> 00:05:59,759
+"L1," the original list, "L," is modified by adding two new elements.
+
+83
+00:05:59,759 --> 00:06:04,400
+To learn more about methods check out our video on objects and classes.
+
+84
+00:06:04,400 --> 00:06:09,360
+Another similar method is append. If we apply append instead of extended,
+
+85
+00:06:09,360 --> 00:06:13,360
+we add one element to the list. If we look at the index
+
+86
+00:06:13,360 --> 00:06:19,280
+there is only one more element. Index 3 contains the list we appended.
+
+87
+00:06:19,280 --> 00:06:22,560
+Every time we apply a method, the list changes.
+
+88
+00:06:22,560 --> 00:06:27,039
+If we apply extend, we add two new elements to the list.
+
+89
+00:06:27,039 --> 00:06:31,199
+The list L is modified by adding two new elements.
+
+90
+00:06:31,199 --> 00:06:34,960
+If we append the string A, we further change the list,
+
+91
+00:06:34,960 --> 00:06:40,000
+adding the string A. As lists are mutable we can change them.
+
+92
+00:06:40,000 --> 00:06:43,759
+For example, we can change the first element as follows.
+
+93
+00:06:43,759 --> 00:06:50,880
+The list now becomes hard rock 10 1.2. We can delete an element of a list
+
+94
+00:06:50,880 --> 00:06:54,720
+using the del command. We simply indicate the list item we
+
+95
+00:06:54,720 --> 00:06:59,360
+would like to remove as an argument. For example, if we would like to remove
+
+96
+00:06:59,360 --> 00:07:04,080
+the first element the result becomes 10 1.2.
+
+97
+00:07:04,080 --> 00:07:08,400
+We can delete the second element. This operation removes the second element off
+
+98
+00:07:08,400 --> 00:07:11,840
+the list. We can convert a string to a list using
+
+99
+00:07:11,840 --> 00:07:15,280
+split. For example, the method split converts
+
+100
+00:07:15,280 --> 00:07:17,840
+every group of characters separated by a space
+
+101
+00:07:17,840 --> 00:07:22,960
+into an element of a list. We can use the split function to separate strings on a
+
+102
+00:07:22,960 --> 00:07:27,120
+specific character known, as a delimiter. We simply pass the
+
+103
+00:07:27,120 --> 00:07:32,160
+delimiter we would like to split on as an argument, in this case a comma.
+
+104
+00:07:32,160 --> 00:07:36,000
+The result is a list. Each element corresponds to a set of characters that
+
+105
+00:07:36,000 --> 00:07:41,520
+have been separated by a comma. When we set one variable B equal to A,
+
+106
+00:07:41,520 --> 00:07:45,440
+both A and B are referencing the same list.
+
+107
+00:07:45,440 --> 00:07:49,840
+Multiple names referring to the same object is known as aliasing.
+
+108
+00:07:49,840 --> 00:07:54,879
+We know from the list slide that the first element in B is set as hard rock.
+
+109
+00:07:54,879 --> 00:07:58,240
+If we change the first element in A to banana,
+
+110
+00:07:58,240 --> 00:08:03,039
+we get a side effect, the value of B will change as a consequence.
+
+111
+00:08:03,039 --> 00:08:07,520
+A and B are referencing the same list, therefore if we change A,
+
+112
+00:08:07,520 --> 00:08:12,240
+list B also changes. If we check the first element of B
+
+113
+00:08:12,240 --> 00:08:17,039
+after changing list A, we get banana instead of hard rock.
+
+114
+00:08:17,039 --> 00:08:20,960
+You can clone list A by using the following syntax.
+
+115
+00:08:20,960 --> 00:08:24,800
+Variable A references one list. Variable B
+
+116
+00:08:24,800 --> 00:08:28,960
+references a new copy or clone of the original list.
+
+117
+00:08:28,960 --> 00:08:35,039
+Now if you change A, B will not change. We can get more info on lists, tuples, and
+
+118
+00:08:35,039 --> 00:08:42,959
+many other objects in Python using the help command. Simply pass in the list, tuple, or any other Python object.
+
+119
+00:08:42,959 --> 00:08:46,800
+See the labs for more things, you can do with lists.
+
+120
+00:08:46,800 --> 00:08:51,000
+(Music)
+
